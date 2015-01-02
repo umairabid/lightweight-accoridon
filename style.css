@@ -1,0 +1,19 @@
+#accordian{
+	width: 400px;
+}
+
+#accordian .accordian-panel{
+	width: 100%;
+	background-color: ##F7F7F7;
+	
+}
+
+#accordian .accordian-panel .head{
+	border: 1px solid #ccc;
+	padding: 2px 5px;
+	
+}
+
+#accordian .accordian-panel .body{
+	padding: 2px 5px;
+}
