@@ -42,8 +42,11 @@
   };
 
   Plugin.prototype.togglePanel = function(ev){
-    var index = $(ev.target).attr('data-panel-index');
-    if(index !== this.current_index){
+    var target = $(ev.target);
+    if(!$(ev.target).hasClass('head'))
+      target = target.closest('.head');
+    var index = target.attr('data-panel-index');
+    if(index != this.current_index){
       this.collapse(this.current_index);
       this.expand(index);
     } 
